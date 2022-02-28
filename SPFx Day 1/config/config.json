@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "page-extension-test-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pageExtensionTest/PageExtensionTestApplicationCustomizer.js",
+          "manifest": "./src/extensions/pageExtensionTest/PageExtensionTestApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "calculate-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/calculate/CalculateCommandSet.js",
+          "manifest": "./src/extensions/calculate/CalculateCommandSet.manifest.json"
+        }
+      ]
+    },
+    "hello-world-react-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorldReact/HelloWorldReactWebPart.js",
+          "manifest": "./src/webparts/helloWorldReact/HelloWorldReactWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "PageExtensionTestApplicationCustomizerStrings": "lib/extensions/pageExtensionTest/loc/{locale}.js",
+    "CalculateCommandSetStrings": "lib/extensions/calculate/loc/{locale}.js",
+    "HelloWorldReactWebPartStrings": "lib/webparts/helloWorldReact/loc/{locale}.js"
+  }
+}
