@@ -2,7 +2,9 @@
     "version": "2.0",
     "extensions": {
         "queues": {
-            "batchSize": 16
+            "batchSize": 16,
+            "maxDequeueCount": 5,
+            "maxPollingInterval": "00:00:02"
         }
     },
     "logging": {

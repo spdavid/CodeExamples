@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "day-3-sp-fx-client-side-solution",
+    "id": "fbe622f4-ac00-4d56-a7ea-7021b399e041",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Day3SPFx description"
+      },
+      "longDescription": {
+        "default": "Day3SPFx description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "day-3-sp-fx Feature",
+        "description": "The feature that activates elements of the day-3-sp-fx solution.",
+        "id": "985a546d-fbac-4960-8cd3-c600c1151d27",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/day-3-sp-fx.sppkg"
+  }
+}

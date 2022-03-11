@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "day-3-sp-fx",
+    "libraryId": "fbe622f4-ac00-4d56-a7ea-7021b399e041",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Day3SPFx",
+    "solutionShortDescription": "Day3SPFx description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
