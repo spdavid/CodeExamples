@@ -9,8 +9,7 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
 import * as strings from 'SiteOrderFormWebPartStrings';
-import SiteOrderForm from './components/SiteOrderForm';
-import { ISiteOrderFormProps } from './components/ISiteOrderFormProps';
+import { SiteOrderForm, ISiteOrderFormProps } from './components/SiteOrderForm';
 
 export interface ISiteOrderFormWebPartProps {
   description: string;
@@ -35,7 +34,8 @@ export default class SiteOrderFormWebPart extends BaseClientSideWebPart<ISiteOrd
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+        userDisplayName: this.context.pageContext.user.displayName,
+        ctx : this.context
       }
     );
 
